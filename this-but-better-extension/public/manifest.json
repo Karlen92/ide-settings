@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "incognito": "split",
+  "short_name": "This But Better",
+  "name": "This But Better Extension",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "browser_action": {
+    "default_title": "This But Better",
+    "default_popup": "index.html"
+  },
+  "content_security_policy": "script-src 'self' 'sha256-GgRxrVOKNdB4LrRsVPDSbzvfdV4UqglmviH9GoBJ5jk='; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": [],
+      "js": ["bundle.js"]
+    }
+  ]
+}
