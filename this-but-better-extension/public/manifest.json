@@ -5,8 +5,6 @@
   "short_name": "This But Better",
   "name": "This But Better Extension",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
   "browser_action": {
     "default_title": "This But Better",
     "default_popup": "index.html"
